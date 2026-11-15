@@ -2,7 +2,7 @@
 window.MONKEY_CONFIG = {
   discordId: "1215522544564703323",
   displayName: "Monkey",
-  about: "Building a better web, one monkey at a time.",
+  about: "• Python - • Typescript - • Javascript",
   githubUrl: "https://github.com/bentrover",
   connections: [
     { label: "Discord", detail: "Message me", url: "https://discord.com/users/1215522544564703323", icon: "◉", kind: "discord" },
