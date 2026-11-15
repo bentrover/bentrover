@@ -54,7 +54,7 @@
     $("statusDot").className = `status-dot ${status}`;
     $("navDot").className = status;
     $("navStatus").textContent = `${status.toUpperCase()}`;
-    $("connectionState").textContent = `${status.toUpperCase()}`;
+    setText("connectionState", status.toUpperCase());
     const activities = data.activities || [];
     const game = activities.find(a => a.type !== 4 && a.name);
     if (game) {
