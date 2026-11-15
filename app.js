@@ -88,7 +88,10 @@
     if (flag & 16384) badgeData.push(["✧","Verified Bot Developer"]);
     if (badgeData.length) $("badges").innerHTML = badgeData.slice(0,5).map(([icon,title])=>`<span title="${title}">${icon}</span>`).join("");
   }
-
+const setText = (id, value) => {
+    const element = $(id);
+    if (element) element.textContent = value;
+}
   let socket, retry;
   function connect() {
     socket = new WebSocket("wss://api.lanyard.rest/socket");
