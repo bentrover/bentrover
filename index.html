@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080808"><meta name="description" content="Monkey">
+<title>Monkey</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="ambient" aria-hidden="true"></div>
+<main class="page" id="app">
+<header class="top"><span class="live"><i id="navDot"></i><span id="navStatus">—</span></span><a id="discordLink" href="https://discord.com" target="_blank" rel="noopener noreferrer">Discord <b>↗</b></a></header>
+<section class="profile" id="card">
+<div class="cover"><div class="cover-glow"></div><img id="discordBanner" class="discord-banner hidden" alt=""><div class="avatar-wrap"><img id="avatar" src="https://cdn.discordapp.com/embed/avatars/0.png" alt="Avatar"><i id="statusDot" class="status-dot offline"></i></div></div>
+<div class="identity"><div><h1 id="displayName">Monkey</h1><p id="username"></p></div><div class="badges" id="badges"></div></div>
+<div class="section about-section"><h2>About</h2><p id="about"></p></div>
+<div class="section"><h2>Links</h2><div class="links" id="connections"></div></div>
+<div class="section activity-section"><h2>Activity</h2><div class="activity"><div class="activity-icon" id="activityArt">M</div><div class="activity-copy"><strong id="activityName"></strong><span id="activityDetail"></span><small id="activityState"></small></div><span class="activity-live" id="connectionState">—</span></div>
+<div class="spotify hidden" id="spotify"><img id="spotifyArt" src="" alt=""><div><strong id="spotifySong"></strong><span id="spotifyArtist"></span></div></div></div>
+</section></main>
+<script src="config.js"></script><script src="app.js"></script>
+</body></html>
